@@ -1,0 +1,67 @@
+class Egzamin():
+  Przedmioty = ['Matematyka dyskretna', 'Analiza matematyczna 2', 'Architektura systemów komputerowych', 'Język angielski 2', 'Programowanie obiektowe', 'Programowanie w języku Python']
+  nrPrzedmiotu = 0
+  def __init__(self, p):
+    self.nrPrzedmiotu = p
+    print('Pierwszym przedmiotem do zdania jest:', self.Przedmioty[self.nrPrzedmiotu])
+  def ustawPrzedmiot(self, p):
+    self.nrPrzedmiotu = p
+  def wyswietlPrzedmiot(self):
+    print('Pierwszym przedmiotem do zdania jest:', self.Przedmioty[self.nrPrzedmiotu])
+
+eg = Egzamin(2)
+eg.ustawPrzedmiot(4)
+eg.wyswietlPrzedmiot()
+
+
+import math
+
+class Kolo():
+  def __init__(self):
+    self.promien = 1
+  def ustawPromien(self, r):
+    self.promien = r
+  def obliczPole(self):
+    pole = self.promien * self.promien * math.pi
+    print('Pole koła wynosi:', pole)
+  def obliczObwod(self):
+    obw = self.promien * 2 * math.pi
+    print('Obwód koła wynosi:', obw)
+
+kolo = Kolo()
+kolo.ustawPromien(3)
+kolo.obliczPole()
+kolo.obliczObwod()
+
+
+class Wakacje():
+  wiek, plec, kraj, miasto, transport, liczbaOsob = "", "", "", "", "", ""
+  def __init__(self):
+    return(print('Wiek: - ', 'Płeć: -', 'Kraj: -', 'Miasto: -', 'Transport: -', 'Liczba osób: -'))
+  def pytanieWiek(self, w):
+    self.wiek = str(w)
+  def pytaniePlec(self, p):
+    
+  def pytanieKraj(self, k):
+    self.kraj = k
+  def pytanieMiasto(self, m):
+    self.miasto = m
+  def pytanieTransport(self, tr):
+    self.transport = tr
+  def pytanieLiczbaOsob(self, lo):
+    self.liczbaOsob = lo
+  def wyswietlAnkiete(self):
+    print('Ankieta')
+    print('Wiek:', self.wiek)
+    print('Płeć:', self.plec)
+    print('Kraj:', self.kraj)
+    print('Miasto:', self.miasto)
+    print('Transport:', self.transport)
+    print('Liczba osób:', self.liczbaOsob)
+
+for i in range(0, 3):
+  os = Wakacje()
+  os.pytanieWiek(input('Ile masz lat?: '))
+  os.pytanieKraj(input('W jakim kraju chcesz spędzić wakacje?: '))
+  os.pytanieMiasto(input('W jakim mieście chcesz spędzić wakacje?: '))
+  os.pytanie
